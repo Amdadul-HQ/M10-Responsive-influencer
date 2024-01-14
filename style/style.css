@@ -1,0 +1,237 @@
+/* Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* share style */
+:root{
+    --primary-font-color: var(#3A3A3A);
+    --product-name-color: var(#18191F);
+    --product-price-color: var(rgba(0, 0, 0, 0.87));
+    --product-description: var(#787885);
+    --button-bg-color: var(#E02C6D);
+    --rating-star-color:#FB8200;
+}
+body{
+    border: 1px solid red;
+}
+/* First Page Style */
+
+.conteinar{
+    width: 80%;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+/* NavBar Style */
+nav, .banner-conteinar,.logo-conteinar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-conteinar{
+    display:none;
+}
+nav .logo{
+    font-size: 1.375rem;
+    font-weight: 700;
+    color:var(--primary-font-color);
+}
+nav ul{
+    display:flex;
+}
+nav ul li{
+    list-style: none;
+    padding:20px 34px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color:var(--primary-font-color);
+}
+.banner-conteinar{
+    margin:180px auto;
+}
+.banner-heading{
+    color: var(--primary-font-color);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size:3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-description{
+    width: 505px;
+    height: 60.9px;
+    flex-shrink: 0;
+    color: var(--primary-font-color);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-btn{
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    color:#fff;
+    border:none;
+    font-size: 16px;
+    font-weight: 700;
+}
+.banner-img-content img{
+    background:url('../images/Circle\ design.svg');
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+}
+/* Second Page Style */
+
+.sponspor-logo{
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+}
+.product{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    justify-content: center;
+    margin-top:130px;
+}
+.product-conteinar-title{
+    grid-column: 1/-1;
+    text-align: center;
+    color: var(--primary-font-color);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+}
+.product-card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding:15px;
+}
+.product-card img{
+    width: 100%;
+}
+.product-name{
+    color: var(--product-name-color);
+    font-feature-settings: 'liga' off;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+.product-price{
+    color: var(--product-price-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+.rating{
+    display:flex;
+    align-items: center;
+}
+.rating i{
+    color:var(--rating-star-color);
+}
+.rating h4{
+    padding-left: 10px;
+    color:var(--primary-font-color)
+}
+.product-description{
+    color: var(--product-description);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.252px;
+}
+.see-more{
+    grid-column: 3;
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1rem;
+    font-weight: 700;
+}
+/* Third Page style */
+.featured-heading{
+    color: #0A0826;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 2.37rem;
+    font-weight: 700;
+    
+}
+.featured-description{
+    color: #6C6C6C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 500px;
+    margin-top: 30px;
+}
+.featured-conteinar{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.join-btn{
+    padding:10px 25px;
+    background-color: #E02C6D;
+    color:#fff;
+    border:none;
+    margin-top:30px;
+    cursor: pointer;
+}
+.icon-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.icon-footer i{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+footer{
+    background-color: #0A0826;
+    color:#fff;
+    text-align: center;
+    padding:100px 0;
+}
+
+/* Media Quarry */
+@media screen and (max-width:576px) {
+    
+    .conteinar{
+        width: 90%;
+    }
+    .banner-text-content{
+        text-align: center;
+    }
+    .mobilehide{
+        display:none;
+    }
+    .logo-conteinar{
+        display:flex;
+    }
+    .banner-conteinar, .featured-conteinar{
+        flex-direction: column-reverse;
+    }
+    .product{       
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,2fr);
+
+    }
+    .sponspor-logo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
