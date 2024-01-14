@@ -215,7 +215,7 @@ footer{
 
 /* Media Quarry */
 @media screen and (max-width:576px) {
-    i{
+    .ri-shopping-cart-2-line, .ri-menu-line{
         font-size: 1.5rem;
     }
     .conteinar{
